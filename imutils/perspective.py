@@ -6,6 +6,8 @@ from scipy.spatial import distance as dist
 import numpy as np
 import cv2
 
+#this give us coordinates in top-left, top-right, bottom-right, and bottom-left order
+
 def order_points(pts):
     # sort the points based on their x-coordinates
     xSorted = pts[np.argsort(pts[:, 0]), :]
